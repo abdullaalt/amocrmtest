@@ -79,7 +79,7 @@ abstract class Api{
 
     public function getLeadEvents($ids, $created_at){
 
-        $events = $this->api->leads()->getOne(1296313);
+        //$events = $this->api->leads()->getOne(1296313);
 
         $ev = $this->api->events();
         $events = $ev->get((new EventsFilter())
